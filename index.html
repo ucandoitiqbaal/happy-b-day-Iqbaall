@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Iqbaal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+      color: white;
+      background-color: #0a1d37;
+      position: relative;
+    }
+    .stars-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('https://i.imgur.com/f1QH1xK.png') repeat;
+      opacity: 0.4;
+      animation: twinkle 5s linear infinite;
+      z-index: 0;
+    }
+    @keyframes twinkle {
+      0%,100% {opacity: 0.4;}
+      50% {opacity: 0.7;}
+    }
+    .container {
+      z-index: 1;
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+    .next-btn {
+      background-color: white;
+      color: #0a1d37;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+    .next-btn:hover {
+      background-color: #d6e0f0;
+    }
+    #page2 {
+      display: none;
+      line-height: 1.6em;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="stars-overlay"></div>
+
+  <div class="container" id="page1">
+    <h1>hallo Iqbaal, ini project kedua akuu!<br>setelah aku bikinin kamu project pertama yang nyemangatin waktu utbk hehe. semoga sukaa &lt;3</h1>
+    <button class="next-btn" onclick="showPage2()">Next</button>
+  </div>
+
+  <div class="container" id="page2">
+    <p>
+      Happy birthday Iqbaal, aku harap Iqbaal mencapai semua impian Iqbaal. semoga Iqbaal panjang umur, sehat selalu, rezekinya lancar, dan semoga Iqbaal selalu menjadi orang yang beruntung dalam segala hal. semoga juga Iqbaal selalu dikelilingi oleh orang-orang baik ⭐️⭐️.<br><br>
+
+      proud of u manusia bintang 10 karna sudah berjalan dan bertahan sejauh ini. sebelumnya aku minta maaf karena waktu itu pernah bilang "gabakal ganggu kamu lagi" tapi nyatanya sekarang malah ngasih spesial gift gini, yaaa kadang hal-hal kecil kayak gini masih kepikiran aja. maaf juga karna masih belum sepenuhnya lupa sama kamu. kamu ngga salah, ekspektasi ku yang salah.<br><br>
+
+      kali ini dan bahkan dari dulu aku berharap semoga hidup mu selalu diberi kemudahan dalam segala hal.<br><br>
+
+      selamat ulang tahun Iqbaal, dari seseorang yang masih ngeliat kamu sebagai manusia bintang paling bersinar, bahkan dari kejauhan.
+    </p>
+  </div>
+
+  <script>
+    function showPage2() {
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page2").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
